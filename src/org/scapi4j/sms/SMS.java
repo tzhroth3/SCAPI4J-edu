@@ -7,7 +7,7 @@ public class SMS {
 	private SMSImpl sms = new SMSImpl();
 
 	/**
-	 * 
+	 * constructor initializes SMS Impl object
 	 */
 	SMS() {
 		SMSOutboundMessageRequest smsOutboundMessage = new SMSOutboundMessageRequest();
@@ -20,8 +20,10 @@ public class SMS {
 	/**
 	 * 
 	 * @param receiverAddress
+	 * 
 	 */
 	public void addReceiver(String receiverAddress) {
+		// add error handling resp. check if the object are not null
 		List<String> list = sms.getOutboundSMSMessageRequest().getAddress();
 		list.add(receiverAddress);
 	}
