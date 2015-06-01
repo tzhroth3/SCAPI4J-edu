@@ -1,4 +1,5 @@
 package org.scapi4j.edu;
+
 /** 
  * 
  * @author TZHROTH3
@@ -18,6 +19,9 @@ public class SmsImpl {
 			SmsOutboundMessageRequest outboundSMSMessageRequest) {
 		this.outboundSMSMessageRequest = outboundSMSMessageRequest;
 	} 
+
+	public void init (){}
+	
 	
 	
 }
