@@ -3,7 +3,7 @@ package org.scapi4j.edu;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SmsOutboundMessage {
+public class SmsOutboundMessageRequest {
 
 	String senderAdress;
 	List<String> address = new ArrayList<String>();

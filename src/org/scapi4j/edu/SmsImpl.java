@@ -2,14 +2,14 @@ package org.scapi4j.edu;
 
 public class SmsImpl {
 	
-	private SmsOutboundMessage outboundSMSMessageRequest;
+	private SmsOutboundMessageRequest outboundSMSMessageRequest;
 
-	public SmsOutboundMessage getOutboundSMSMessageRequest() {
+	public SmsOutboundMessageRequest getOutboundSMSMessageRequest() {
 		return outboundSMSMessageRequest;
 	}
 
 	public void setOutboundSMSMessageRequest(
-			SmsOutboundMessage outboundSMSMessageRequest) {
+			SmsOutboundMessageRequest outboundSMSMessageRequest) {
 		this.outboundSMSMessageRequest = outboundSMSMessageRequest;
 	} 
 	

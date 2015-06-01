@@ -14,7 +14,7 @@ import java.util.List;
 import javax.net.ssl.HttpsURLConnection;
 
 import org.scapi4j.edu.SmsImpl;
-import org.scapi4j.edu.SmsOutboundMessage;
+import org.scapi4j.edu.SmsOutboundMessageRequest;
 import org.scapi4j.edu.SmsOutboundTextMessage;
 
 import com.google.gson.Gson;
@@ -25,7 +25,7 @@ public class Send {
 
 		SmsImpl sms = new SmsImpl();
 
-		SmsOutboundMessage smsOutboundMessage = new SmsOutboundMessage();
+		SmsOutboundMessageRequest smsOutboundMessage = new SmsOutboundMessageRequest();
 		smsOutboundMessage.setSenderAdress("+417977011816");
 		List listA = new ArrayList();
 		
