@@ -1,4 +1,9 @@
 package org.scapi4j.edu;
+/** 
+ * 
+ * @author TZHROTH3
+ *
+ */
 
 public class SmsImpl {
 	
