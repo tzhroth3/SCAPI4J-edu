@@ -1,0 +1,11 @@
+Manifest-Version: 1.0 
+Created-By: 0.9.1 (Swisscom) 
+Specification-Title: Swisscom API Specification 
+Specification-Vendor: ${vendor.name} 
+Specification-Version: ${app.version} 
+Implementation-Title: Java Runtime Environment 
+Implementation-Version: 1.4.2_05 
+Implementation-Vendor:  
+Built-By: ${user.name} 
+Build-Jdk: ${java.version} 
+ 
