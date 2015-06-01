@@ -1,2 +1,46 @@
 2015-05-11 10:13:14,562 [main] INFO  helloWorld:30 - Hallo
 2015-05-11 14:30:00,193 [main] INFO  helloWorld:30 - Hallo
+2015-06-01 14:11:28 [main] ERROR SMS:128 - org.scapi4j.sms.SMSImpl@1b250b4
+java.io.FileNotFoundException: https://api.swisscom.com/v1/messaging/sms/outbound/tel:+41797701816/requestsss
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_45]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source) ~[?:1.8.0_45]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_45]
+	at org.scapi4j.sms.SMS.send(SMS.java:115) [bin/:?]
+	at sms.Send.main(Send.java:27) [bin/:?]
+Caused by: java.io.FileNotFoundException: https://api.swisscom.com/v1/messaging/sms/outbound/tel:+41797701816/requestsss
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_45]
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source) ~[?:1.8.0_45]
+	at org.scapi4j.sms.SMS.send(SMS.java:110) ~[bin/:?]
+	... 1 more
+2015-06-01 15:32:49 [main] ERROR SMS:128 - org.scapi4j.sms.SMSImpl@1b250b4
+java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.swisscom.com/v1/messaging/sms/outbound/tel:+41797701816/requests
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_45]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_45]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_45]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source) ~[?:1.8.0_45]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_45]
+	at org.scapi4j.sms.SMS.send(SMS.java:115) [bin/:?]
+	at sms.Send.main(Send.java:27) [bin/:?]
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: https://api.swisscom.com/v1/messaging/sms/outbound/tel:+41797701816/requests
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_45]
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source) ~[?:1.8.0_45]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source) ~[?:1.8.0_45]
+	at org.scapi4j.sms.SMS.send(SMS.java:110) ~[bin/:?]
+	... 1 more

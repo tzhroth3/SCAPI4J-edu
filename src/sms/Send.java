@@ -1,29 +1,34 @@
 package sms;
 
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
 
+import org.scapi4j.sms.SMS;
 import org.scapi4j.sms.SMSImpl;
-import org.scapi4j.sms.SMSOutboundMessageRequest;
-import org.scapi4j.sms.SMSOutboundTextMessage;
 
 import com.google.gson.Gson;
 
 public class Send {
 
 	public static void main(String[] arg) throws IOException {
+		
+		
+		SMS sms = new SMS();
+		sms.setTextMessage("Hello World from your first Java API Class! Congrat Behar!");
+		sms.setSenderAddress("+41797701816");
+		sms.addReceiver("+41797701816");
+		sms.addReceiver("+41792349619");
+		sms.setApiKey("FCJq8KaXtBFeqeecccw71RcjS8Ns7plb");
+		sms.send();
+		
 
-		SMSImpl sms = new SMSImpl();
+/**		SMSImpl sms = new SMSImpl();
 
 		SMSOutboundMessageRequest smsOutboundMessage = new SMSOutboundMessageRequest();
 		smsOutboundMessage.setSenderAdress("+417977011816");
@@ -42,6 +47,7 @@ public class Send {
 		//sms.getOutboundSMSMessageRequest().getOutboundSMSTextMessage().setMessage(message);
 		
 		senden("FCJq8KaXtBFeqeecccw71RcjS8Ns7plb", sms);
+		**/
 
 	}
 
