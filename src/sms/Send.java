@@ -13,9 +13,9 @@ import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
 
-import org.scapi4j.edu.SmsImpl;
-import org.scapi4j.edu.SmsOutboundMessageRequest;
-import org.scapi4j.edu.SmsOutboundTextMessage;
+import org.scapi4j.sms.SMSImpl;
+import org.scapi4j.sms.SMSOutboundMessageRequest;
+import org.scapi4j.sms.SMSOutboundTextMessage;
 
 import com.google.gson.Gson;
 
@@ -23,9 +23,9 @@ public class Send {
 
 	public static void main(String[] arg) throws IOException {
 
-		SmsImpl sms = new SmsImpl();
+		SMSImpl sms = new SMSImpl();
 
-		SmsOutboundMessageRequest smsOutboundMessage = new SmsOutboundMessageRequest();
+		SMSOutboundMessageRequest smsOutboundMessage = new SMSOutboundMessageRequest();
 		smsOutboundMessage.setSenderAdress("+417977011816");
 		List listA = new ArrayList();
 		
@@ -33,8 +33,8 @@ public class Send {
 
 		smsOutboundMessage.setAddress(listA);
 
-		SmsOutboundTextMessage smsOutboundTextMessage = new SmsOutboundTextMessage();
-		smsOutboundMessage.setOutboundSMSTextMessage(smsOutboundTextMessage);
+		SMSOutboundTextMessage sMSOutboundTextMessage = new SMSOutboundTextMessage();
+		smsOutboundMessage.setOutboundSMSTextMessage(sMSOutboundTextMessage);
 
 		sms.setOutboundSMSMessageRequest(smsOutboundMessage);
 
@@ -45,7 +45,7 @@ public class Send {
 
 	}
 
-	public static void senden(String apiKey, SmsImpl sms) throws IOException {
+	public static void senden(String apiKey, SMSImpl sms) throws IOException {
 		try {
 			// Json Parameter erstellen
 			Gson gson = new Gson();
