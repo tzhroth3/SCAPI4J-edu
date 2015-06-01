@@ -13,7 +13,5 @@ public class SmsImpl {
 		this.outboundSMSMessageRequest = outboundSMSMessageRequest;
 	} 
 	
-
-	
 	
 }
